@@ -32,7 +32,7 @@ RUN adduser \
     --gecos "" \
     --shell /bin/bash \
     ctfd \
-    && chmod +x /opt/CTFd/docker-entrypoint.sh \
+    && chmod -R +x /opt/CTFd/docker-entrypoint.sh \
     && chown -R 1001:1001 /opt/CTFd /var/log/CTFd /var/uploads
 
 USER 1001

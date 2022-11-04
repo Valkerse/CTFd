@@ -45,7 +45,7 @@ services:
       - MYSQL_PASSWORD=ctfd
       - MYSQL_DATABASE=ctfd
     volumes:
-      - .data/mysql:/var/lib/mysql
+      - .sql-data:/var/lib/mysql
     networks:
         internal:
     # This command is required to set important mariadb defaults
