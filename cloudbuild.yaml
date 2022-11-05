@@ -1,4 +1,5 @@
 steps:
 # running docker-compose
-- name: 'docker/compose:1.26.2'
-  args: ['up', '-d']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t' 'us.gcr.io/probable-goods-367319/github_valkerse_ctfd/github-valkerse-ctfd@sha256:8a3a46788266435731579c0926f232ca61ef3322e1a1cca93f5d743525dddb70', '.']
+  
